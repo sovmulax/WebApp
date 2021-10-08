@@ -1,0 +1,289 @@
+<%- include('part/header'); %>
+
+  <body cz-shortcut-listen="true">
+    <header class="header-global">
+      <nav id="navbar-main" class="
+        navbar
+        navbar-main
+        navbar-expand-lg
+        navbar-transparent
+        navbar-dark
+        navbar-theme-primary
+        headroom
+        py-lg-2
+        px-lg-6
+        headroom--not-bottom headroom--pinned headroom--top
+      ">
+        <div class="container">
+          <a class="navbar-brand">
+            <img class="navbar-brand-dark" src="fichiers/logo.webp" alt="Logo light" />
+            <img class="navbar-brand-light" src="fichiers/logo.webp" alt="Logo dark" />
+          </a>
+          <div class="navbar-collapse collapse" id="navbar_global">
+            <div class="navbar-collapse-header">
+              <div class="row">
+                <div class="col-6 collapse-brand">
+                  <a href="https://rnpp.ci/"><img src="fichiers/logo.webp" alt="menuimage""" /></a>
+                </div>
+                <div class="col-6 collapse-close">
+                  <a href="#navbar_global" class="fas fa-times" data-toggle="collapse" data-target="#navbar_global"
+                    aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation"></a>
+                </div>
+              </div>
+            </div>
+            <ul class="navbar-nav navbar-nav-hover ml-3">
+              <li class="nav-item">
+                <a href="https://rnpp.ci/" class="nav-link">
+                  <span class="nav-link-inner-text"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://rnpp.ci/liste-des-centres-d-enrolement" class="nav-link">
+                  <span class="nav-link-inner-text"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.oneci.ci/carte-identite/suivi-de-statut" class="nav-link" target="_blank">
+                  <span class="nav-link-inner-text"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-lg-block"></div>
+          <div class="d-flex align-items-center">
+            <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global"
+              aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section section-xl bg-secondary overlay-dark text-white rounded">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-md-center">
+              <h1 class="display-3">
+                Bienvenue sur le portail de la Police pour les déclarations de vol
+              </h1>
+              <h5 class="mt-5 mb-5">
+                Faite votre déclaration de vol ici partous ou vous ètes
+              </h5>
+              <button target="#1" class="btn btn-primary btn-lg animate-up-1 ml-3">
+                Déclaration de vol
+              </button>
+              <p class="lead text-muted mt-4"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white pt-5 pb-5">
+        <div class="container"></div>
+      </section>
+      <section class="bg-secondary pt-5 pb-5" id="work">
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-8 text-center">
+              <h2 class="h2 text-white">
+                <span class="font-weight-bold">Comment faire sa </span>
+                Déclaration de vol ?
+              </h2>
+              <p class="lead text-white" style="font-size: 16px">
+                Pour effectuer la déclaration de vol vous dévez être soit être la victime 
+                soit témoin du vol, remplissez les étapes ci-déssous :
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-center" id="1">
+            <div class="col-md-8">
+              <div class="card shadow-soft border-0 mb-4">
+                <div class="card-body ml-5 mr-5 mt-2">
+                  <div style="text-align: center">
+                    <span class="step">1</span>
+                    <span class="step">2</span>
+                    <span class="step">3</span>
+                  </div>
+                  <form method="POST" id="regForm" action="apercu">
+                    <div class="tab">
+                      <h3 style="text-align: center">
+                        Informations Personnelles
+                      </h3>
+
+                      <div class="col-md-12">
+                        <select name="user_type" class="form-control">
+                          <option value="" disabled selected>
+                            Choisissez une Option
+                          </option>
+                          <option value=""></option>
+                        </select>
+                      </div>
+                      <br />
+                      <div class="col-md-12">
+                        <input class="form-control" type="number" name="cni" placeholder="N°CNI" required />
+                      </div>
+                      <br />
+                      <div class="col-md-12">
+                        <input class="form-control" type="text" name="nom" placeholder="Nom" required />
+                      </div>
+                      <br />
+                      <div class="col-md-12">
+                        <input class="form-control" type="text" name="prenom" placeholder="Prenom" required />
+                      </div>
+                      <br />
+                      <div class="col-md-12">
+                        <input class="form-control" type="text" name="adresse" placeholder="Adresse" required />
+                      </div>
+                      <br />
+                      <div class="col-md-12">
+                        <input class="form-control" type="text" name="telephone" placeholder="Téléphone" required />
+                      </div>
+                      <br>
+                      <div class="col-md-12">
+                        <div class="row" style="
+                            border: 0.1rem solid #95919130;
+                            width: 100%;
+                            padding: 6px;
+                            margin-left: 0;
+                          ">
+                          <div class="col-md-6">
+                            <input class="checkbox" type="radio" id="new" name="genre" value="Monsieur" required=""
+                              checked="checked" />
+                            <label for="new">
+                              <span>
+                                <img src="fichiers/check-icn.svg" alt="Checked Icon" />
+                              </span>
+                              Monsieur
+                            </label>
+                          </div>
+                          <div class="col-md-6">
+                            <input class="checkbox" type="radio" id="renew" name="genre" value="Madame" required="" />
+                            <label for="renew">
+                              <span>
+                                <img src="fichiers/check-icn.svg" alt="Checked Icon" />
+                              </span>
+                              Madame
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab">
+                      <h3 style="text-align: center">
+                        Informations sur le bien Volé
+                      </h3>
+
+                      <div class="col-md-12">
+                        <select name="type" class="form-control">
+                          <option value="" disabled selected>
+                            Choisissez une Option
+                          </option>
+                          <option value=""></option>
+                        </select>
+                      </div>
+                      <br />
+                      <div class="col-md-12">
+                        <input class="form-control" type="text" name="couleur" placeholder="Couleur" required />
+                      </div>
+                      <br />
+                      <div class="col-md-12">
+                        <input class="form-control" type="text" name="marque" placeholder="Marque" required />
+                      </div>
+                      <br />
+                      <div class="col-md-12">
+                        <input class="form-control" type="text" name="serie" placeholder="Numéro de série" required />
+                      </div>
+                      <br />
+                      <div class="col-md-12">
+                        <input class="form-control" type="text" name="matricule" placeholder="Matricule" required />
+                      </div>
+                      <br />
+                      <div class="col-md-12">
+                        <textarea class="form-control" name="description" cols="49" rows="8" required></textarea>
+                      </div>
+                    </div>
+
+                    <div class="tab">
+                      <h3 style="text-align: center">Informations Annexes</h3>
+
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="firstname">Heure Exacte</label>
+                          <input required type="time" class="form-control" id="time" name="heure" />
+                        </div>
+                      </div>
+                      <br />
+                      <h5 style="text-align: center">
+                        Si vous ne vous rappeler pas de l'heure exacte signifier
+                        l'interval
+                      </h5>
+
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="firstname">Début</label>
+                          <input required type="time" class="form-control" id="time" name="debut" />
+                        </div>
+                      </div>
+                      <br />
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="firstname">Fin</label>
+                          <input required type="time" class="form-control" id="time" name="fin" />
+                        </div>
+                      </div>
+                      <br />
+                      <h3 style="text-align: center">Lieu</h3>
+                      <br />
+                      <div class="col-md-12">
+                        <input class="form-control" type="text" name="rue" placeholder="N° de la rue" required />
+                      </div>
+                      <br />
+                      <div class="col-md-12">
+                        <input class="form-control" type="text" name="ville" placeholder="Ville, Commune" required />
+                      </div>
+                      <br />
+                      <div class="col-md-12">
+                        <input class="form-control" type="text" name="code" placeholder="Code Postal" required />
+                      </div>
+                      <br />
+                    </div>
+                    <br />
+                  </form>
+                  <div class="col-md-12" style="float: right">
+                    <div class="row">
+                      <div class="col">
+                        <button type="button" class="
+                      btn btn-lg btn-primary btn-block
+                      mt-6 mt-md-0
+                      animate-up-2
+                    " id="prevBtn" onclick="nextPrev(-1)">
+                          Précédent
+                        </button>
+                      </div>
+                      <div class="col">
+                        <button type="button" class="
+                        btn btn-lg btn-primary btn-block
+                        mt-6 mt-md-0
+                        animate-up-2
+                      " id="nextBtn" onclick="nextPrev(1)">
+                          Suivant
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pb-5 pt-5 bg-soft">
+        <div class="container mb-5" id="faqs">
+          <div class="row justify-content-center"></div>
+        </div>
+      </section>
+    </main>
+
+    <%- include('part/footer'); %>
+  </body>

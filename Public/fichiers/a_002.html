@@ -1,0 +1,851 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript" src="a_data_002/jquery-3.js"></script><script type="text/javascript" src="a_data_002/kommunicate.js"></script><script type="text/javascript" src="a_data_002/applozic.js"></script><link type="text/css" rel="stylesheet" href="a_data_002/kommunicate.css"><style type="text/css">.km-custom-widget-background-color { background: #ffab00 !important;} .km-custom-widget-background-color-secondary { background: #e6e5ec !important;} .km-custom-widget-border-color { border-color: #ffab00 !important;} .km-custom-widget-text-color { color: #ffab00 !important;} .km-custom-widget-fill { fill: #ffab00 !important;} .km-custom-widget-stroke { stroke: #ffab00 !important;}</style></head><body><div id="mck-sidebox" class="mck-sidebox mck-box fade km-iframe-sidebox-border-radius" role="main" aria-live="polite" style="visibility: visible;">
+	<div class="mck-box-dialog mck-box-sm mck-right mck-bg-white">
+		<div id="mck-sidebox-content" class="mck-sidebox-content mck-box-content">
+			<div id="mck-conversation-header" class="mck-conversation-header mck-truncate n-vis"></div>
+			<div class="mck-box-top mck-title" style="background-color: rgb(255, 171, 0);">
+				<div class="km-header-container">
+					<div class="km-conversation-header-title-container">
+						<div id="mck-tab-individual" class="mck-row n-vis">
+							<div class="mck-tab-link mck-back-btn-container">
+								<button id="mck-conversation-back-btn" aria-label="Back" role="button" tabindex="0" class="mck-conversation-tab-link">
+									<svg focusable="false" aria-hidden="true" class="mck-msg-list-icon" xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" height="30" viewBox="0 0 24 24" width="30">
+										<path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path>
+										<path d="M0-.5h24v24H0z" fill="none"></path>
+									</svg>
+
+								</button>
+							</div>
+							<div class=" mck-name-status-container mck-box-title mck-truncate">
+								<div>
+									<div class="mck-agent-image-container">
+										<div class="mck-agent-image-svg-container n-vis"></div>
+										<img class="mck-agent-image n-vis" src="">
+										<span class="mck-agent-status-indicator km-custom-widget-border-color n-vis"></span>
+									</div>
+								</div>
+								<div>
+									<div id="mck-tab-title" class="mck-tab-title mck-truncate mck-display-name">Conversations</div>
+									<div id="mck-tab-status" class="mck-tab-status mck-truncate n-vis force-n-vis"></div>
+									<div id="mck-agent-status-text" class="mck-agent-status-text  n-vis"></div>
+									<div class="mck-typing-box mck-truncate n-vis">
+										<span id="mck-typing-label">typing...</span>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div id="mck-tab-conversation" class="mck-row">
+							<h4 id="mck-conversation-title" class="mck-box-title mck-truncate" title="Conversations">Conversations</h4>
+						</div>
+					</div>
+
+					<div class="km-faq-and-close-btn-container mck-flexi">
+						<div class="km-kb-container n-vis">
+							<button id="km-faq" class="km-faq" type="button" aria-label="FAQ" tabindex="0" role="button">FAQ</button>
+						</div>
+						<div class="mck-dropdown n-vis" id="km-widget-options">
+							<div class="mck-dropdown-toggle km-widget-options-button" id="options" data-toggle="mckdropdown" aria-expanded="false">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+									<path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z">
+									</path>
+								</svg>
+							</div>
+							<ul class="mck-dropdown-menu menu-right stop-selection" aria-labelledby="options">
+								<li>
+									<div class="menu-item n-vis" id="km-csat-trigger">
+										<svg height="16px" viewBox="0 -10 511.98685 511" width="16px" xmlns="http://www.w3.org/2000/svg">
+											<path d="m510.652344 185.902344c-3.351563-10.367188-12.546875-17.730469-23.425782-18.710938l-147.773437-13.417968-58.433594-136.769532c-4.308593-10.023437-14.121093-16.511718-25.023437-16.511718s-20.714844 6.488281-25.023438 16.535156l-58.433594 136.746094-147.796874 13.417968c-10.859376 1.003906-20.03125 8.34375-23.402344 18.710938-3.371094 10.367187-.257813 21.738281 7.957031 28.90625l111.699219 97.960937-32.9375 145.089844c-2.410156 10.667969 1.730468 21.695313 10.582031 28.09375 4.757813 3.4375 10.324219 5.1875 15.9375 5.1875 4.839844 0 9.640625-1.304687 13.949219-3.882813l127.46875-76.183593 127.421875 76.183593c9.324219 5.609376 21.078125 5.097657 29.910156-1.304687 8.855469-6.417969 12.992187-17.449219 10.582031-28.09375l-32.9375-145.089844 111.699219-97.941406c8.214844-7.1875 11.351563-18.539063 7.980469-28.925781zm0 0" fill="#ffc107"></path>
+										</svg>
+										&nbsp;
+										<span id="km-csat-trigger-text">Rate this conversation</span>
+									</div>
+								</li>
+								<li>
+									<div class="menu-item n-vis" id="km-restart-conversation">
+										<svg width="17" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.83994 2.00001C5.44661 1.90667 2.66661 4.63334 2.66661 8.00001H1.47327C1.17327 8.00001 1.02661 8.36001 1.23994 8.56667L3.09994 10.4333C3.23327 10.5667 3.43994 10.5667 3.57327 10.4333L5.43327 8.56667C5.63994 8.36001 5.49327 8.00001 5.19327 8.00001H3.99994C3.99994 5.40001 6.11994 3.30001 8.73327 3.33334C11.2133 3.36667 13.2999 5.45334 13.3333 7.93334C13.3666 10.54 11.2666 12.6667 8.66661 12.6667C7.59327 12.6667 6.59994 12.3 5.81327 11.68C5.54661 11.4733 5.17327 11.4933 4.93327 11.7333C4.65327 12.0133 4.67327 12.4867 4.98661 12.7267C5.99994 13.5267 7.27327 14 8.66661 14C12.0333 14 14.7599 11.22 14.6666 7.82667C14.5799 4.70001 11.9666 2.08667 8.83994 2.00001Z" fill="#919EAD"></path>
+										</svg>
+										&nbsp;
+										<span id="km-restart-conversation-text">Reset conversation</span>
+									</div>
+								</li>
+								<li>
+									<div class="menu-item n-vis" id="user-overide-voice-output">
+										<div id="user-overide-voice-output-svg-on"><svg width="16px" height="16px" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.458984 4.66672V7.33339C0.458984 7.70006 0.76882 8.00006 1.14751 8.00006H3.21308L5.47833 10.1934C5.9121 10.6134 6.65571 10.3134 6.65571 9.72006V2.27339C6.65571 1.68006 5.9121 1.38006 5.47833 1.80006L3.21308 4.00006H1.14751C0.76882 4.00006 0.458984 4.30006 0.458984 4.66672ZM9.75407 6.00006C9.75407 4.82006 9.05177 3.80672 8.03275 3.31339V8.68006C9.05177 8.19339 9.75407 7.18006 9.75407 6.00006ZM8.03275 0.966723V1.10006C8.03275 1.35339 8.20489 1.57339 8.44587 1.66672C10.2223 2.35339 11.4754 4.04006 11.4754 6.00006C11.4754 7.96006 10.2223 9.64672 8.44587 10.3334C8.198 10.4267 8.03275 10.6467 8.03275 10.9001V11.0334C8.03275 11.4534 8.46653 11.7467 8.86587 11.6001C11.2 10.7401 12.8524 8.56006 12.8524 6.00006C12.8524 3.44006 11.2 1.26006 8.86587 0.400057C8.46653 0.246723 8.03275 0.546723 8.03275 0.966723Z" fill="#919EAD"></path>
+											</svg>
+											</div>
+											<div id="user-overide-voice-output-svg-off"><svg width="16px" height="16px" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.459229 3.66668V6.33335C0.459229 6.70001 0.769065 7.00001 1.14775 7.00001H3.21333L5.47857 9.19335C5.91234 9.61335 6.65595 9.31335 6.65595 8.72001V1.27334C6.65595 0.680012 5.91234 0.380012 5.47857 0.800012L3.21333 3.00001H1.14775C0.769065 3.00001 0.459229 3.30001 0.459229 3.66668Z" fill="#919EAD"></path>
+												</svg>
+												
+												</div>
+										&nbsp;
+										<span id="user-overide-voice-output-text"></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="blk-lg-2 mck-close-btn">
+							<button type="button" class="mck-minimize-icon mck-box-close mck-close icon n-vis">
+								<span aria-hidden="true">−</span>
+							</button>
+							<button type="button" id="km-chat-widget-close-button" class="mck-box-close mck-close-sidebox move-right" data-dismiss="mckbox" aria-label="Close">
+								<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24">
+									<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+									<path d="M0 0h24v24H0z" fill="none"></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="km-internet-disconnect-msg" class="km-offline-msg n-vis">Uh oh! No internet connection. Please check your network settings and try again.</div>
+			<div id="km-local-file-system-warning" class="n-vis">
+				<span id="km-local-file-system-warning-description">
+					Conversation will not be updated in real-time as you are running the installation script from your local file system.
+				</span>
+				<div class="km-learn-more-container">
+					<a href="https://docs.kommunicate.io/docs/web-troubleshooting" class="km-learn-more" target="_blank">					
+						Learn more about this
+					</a>
+				</div>			
+			</div>
+			<div id="mck-product-group" class="mck-tab-panel mck-btn-group mck-product-group">
+				<div id="mck-product-box" class="mck-product-box n-vis mck-dropdown-toggle" data-toggle="mckdropdown" aria-expanded="true">
+					<div class="mck-row">
+						<div class="blk-lg-10">
+							<div class="mck-row">
+								<div class="blk-lg-3 mck-product-icon"></div>
+								<div class="blk-lg-9">
+									<div class="mck-row">
+										<div class="blk-lg-8 mck-product-title mck-truncate"></div>
+										<div class="move-right mck-product-rt-up mck-truncate blk-lg-4">
+											<strong class="mck-product-key"></strong>
+											<span class="mck-product-value"></span>
+										</div>
+									</div>
+									<div class="mck-row">
+										<div class="blk-lg-8 mck-truncate mck-product-subtitle"></div>
+										<div class="move-right mck-product-rt-down mck-truncate blk-lg-4">
+											<strong class="mck-product-key"></strong>
+											<span class="mck-product-value"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="blk-lg-2">
+							<span class="mck-caret n-vis"></span>
+						</div>
+					</div>
+				</div>
+				<ul id="mck-conversation-list" class="mck-dropdown-menu menu-right mck-conversation-list n-vis" role="menu"></ul>
+			</div>
+			<div id="mck-tab-option-panel" class="mck-tab-panel mck-top-btn-panel " style="display:none !important;">
+				<div id="mck-tab-menu-box" class="mck-tab-menu-box vis">
+					<div class="mck-row">
+						<div class="blk-lg-2 move-right">
+							<div class="mck-dropdown-toggle" data-toggle="mckdropdown" aria-expanded="true">
+								<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+									<path d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+								</svg>
+							</div>
+							<ul id="mck-tab-menu-list" class="mck-dropdown-menu mck-tab-menu-box menu-right" role="menu">
+								<li class="mck-tab-message-option">
+									<a href="#" id="mck-btn-clear-messages" class="mck-btn-clear-messages menu-item" title="Clear Messages">Clear Messages</a>
+								</li>
+								<li id="li-mck-block-user">
+									<a href="#" id="mck-block-button" class="menu-item" title="Block User">Block User</a>
+								</li>
+								<li id="li-mck-group-info" class="mck-group-menu-options">
+									<a href="#" id="mck-group-info-btn" class="menu-item" title="Group Info">Group Info</a>
+								</li>
+								<li id="li-mck-leave-group" class="mck-group-menu-options">
+									<a href="#" id="mck-btn-leave-group" class="menu-item" title="Exit Group">Exit Group</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mck-box-body">
+				<div id="mck-message-cell" class="mck-tab-cell mck-message-cell">
+					<div id="mck-price-widget" class="mck-row mck-price-widget mck-top-widget n-vis">
+						<div class="mck-widget-panel">
+							<input type="text" id="mck-price-text-box" placeholder="Enter final agreed price">
+							<button type="button" id="mck-price-submit" class="mck-btn mck-btn-green mck-price-submit" title="Submit">
+								<span>Submit</span>
+							</button>
+						</div>
+					</div>
+					<div class="mck-conversation" tabindex="-1" role="presentation">
+						<div class="mck-message-inner" tabindex="0" aria-live="assertive" aria-atomic="false" role="alert"></div>
+						<div id="mck-contacts-content" class="mck-contacts-content mck-text-center">
+							<button type="button" id="mck-msg-new" class="mck-contact-search mck-btn km-custom-widget-background-color" title="Start New Conversation">Start New Conversation</button>
+						</div>
+						<!-- mck-sidebox-ft box was here previously -->
+					</div>
+					<div id="faq-common">
+							<div class="km-no-results-found-container n-vis">
+									<div class="km-no-results-found">
+										<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+											<path d="M18.01 22H6a2 2 0 0 1-2-2V8l6-6h8a2 2 0 0 1 1.991 2l.01 16a2 2 0 0 1-1.991 2zM6.037 16v1.5h7V16zm0-3v1.5h10V13zM11 3.5L5.5 9H11V3.5z" data-name="Subtraction 1" fill="#c5c5c7"></path>
+											<path fill="none" d="M24 0H0v24h24z" data-name="Path 2"></path>
+										</svg>
+										<p>NO RESULTS FOUND</p>
+									</div>
+								</div>
+						<div id="km-faqdiv">
+                            <div id="km-faq-category-list-container"></div>
+							<ul id="km-faq-list-container" class="km-faq-list-container"></ul>
+						</div>
+						<div id="km-faqanswer" class="km-faqanswer"></div>
+						<div id="km-contact-search-input-box" class="km-faqsearch blk-lg-12">
+							<div class="km-talk-to-human-div n-vis">
+								<p id="mck-no-faq-found">Looking for something else?</p>
+								<button class="talk-to-human-link" id="talk-to-human-link">Talk to an agent</button>
+							</div>
+							<div class="km-contact-input-container">
+								<span class="km-faqsearch-icon">
+									<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+										<path fill="#585555" fill-rule="nonzero" d="M10.557 9.573l5.162 5.162-.984.984-5.162-5.162a5.913 5.913 0 1 1 .984-.984zm-4.644.862a4.522 4.522 0 1 0 0-9.044 4.522 4.522 0 0 0 0 9.044z" opacity=".618"></path> 
+									</svg>
+								</span>
+								<input id="km-faq-search-input" class="km-faqsearch-input" type="text" data-provide="typeahead" placeholder="Search in FAQs..." aria-label="Search in FAQs..." tabindex="0" autocomplete="off">
+								<span class="km-clear-faq-search-icon n-vis">
+									<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+										<g fill="none" fill-rule="evenodd">
+											<circle cx="7" cy="7" r="7" fill="#B7B4B4" fill-rule="nonzero"></circle>
+											<path fill="#FFF" d="M6.814 6.26L4.502 3.945a.393.393 0 0 0-.555.555l2.313 2.313a.262.262 0 0 1 0 .371L3.946 9.498a.393.393 0 0 0 .555.555L6.814 7.74a.262.262 0 0 1 .371 0l2.313 2.314a.393.393 0 0 0 .556-.555L7.74 7.185a.262.262 0 0 1 0-.37L10.054 4.5a.393.393 0 0 0-.556-.555L7.185 6.259a.262.262 0 0 1-.37 0z"></path>
+										</g>
+										</svg>
+								</span>
+							</div>
+						</div>
+
+					</div>
+
+					<div id="mck-contact-loading" class="mck-loading">
+							<svg focusable="false" aria-hidden="true" class="mck-circular-spinner" viewBox="25 25 50 50" width="50" height="50">
+								<circle class="mck-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+							</svg>
+					</div>
+					<div id="mck-no-conversations" class="mck-no-data-text mck-text-muted n-vis">
+						<h3>No conversations yet!</h3>
+					</div>
+					<div id="mck-no-messages" class="mck-no-data-text mck-text-muted n-vis">
+						<h3>No messages yet!</h3>
+					</div>
+					<div id="mck-no-more-conversations" class="mck-show-more-icon n-vis">
+						<h3>No more conversations!</h3>
+					</div>
+					<div id="mck-no-more-messages" class="mck-show-more-icon n-vis">
+						<h3>No more messages!</h3>
+					</div>
+				</div>
+			</div>
+			<div id="mck-offline-message-box" class="mck-offline-message-box n-vis">SET DEFAULT OFFLINE MESSAGE!
+			</div>
+
+			<div id="mck-away-msg-box" class="n-vis">
+				<hr>
+				<p id="mck-away-msg" class="mck-away-msg"></p>
+			</div>
+			<!-- banner for email collection -->
+			<div id="mck-email-collection-box" class="n-vis">
+				<hr>
+				<div class="svg-container">
+					<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 311" width="23px">
+						<path d="M512 26c-.021-14.449-12.555-26-27-26L26 1c-7 .009-13.053 2.04-18 7a27.439 27.439 0 0 0-8 19v258c.009 7.005 3.04 13.053 8 18a27.514 27.514 0 0 0 19 8l459-1a25.874 25.874 0 0 0 26-26zm-55 0L256 166 55 27zM304.486 158.416L460 284l-408 1 155.333-126.584c5.722-4.439-11.276-25.438-17-21L27 271 26 39l223 153c2.244 1.551 4.394 3 7 3s5.751-1.437 8-3L485 38l1 233-165.514-133.584c-5.719-4.437-21.724 16.562-16 21z" data-name="Path 1" fill="#6b6767"></path>
+					</svg>
+				</div>
+
+				<div id="mck-collect-email" class="mck-collect-email">How may we reach you?</div>
+			</div>
+			<div id="mck-email-error-alert-box" class="n-vis">
+				<hr>
+				<div class="svg-container">
+					<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 311" width="23px">
+						<path d="M512 26c-.021-14.449-12.555-26-27-26L26 1c-7 .009-13.053 2.04-18 7a27.439 27.439 0 0 0-8 19v258c.009 7.005 3.04 13.053 8 18a27.514 27.514 0 0 0 19 8l459-1a25.874 25.874 0 0 0 26-26zm-55 0L256 166 55 27zM304.486 158.416L460 284l-408 1 155.333-126.584c5.722-4.439-11.276-25.438-17-21L27 271 26 39l223 153c2.244 1.551 4.394 3 7 3s5.751-1.437 8-3L485 38l1 233-165.514-133.584c-5.719-4.437-21.724 16.562-16 21z" data-name="Path 1" fill="#fff"></path>
+					</svg>
+				</div>
+				<div id="mck-email-error-alert" class="mck-email-error-alert">It seems you have entered an invalid email</div>
+			</div>
+			
+			<!-- Footer With Input Field -->
+			<div id="mck-sidebox-ft" class="mck-box-ft">
+				<!-- <div id="mck-away-msg-box" class="n-vis">
+					<p id="mck-away-msg" class="mck-away-msg"></p>
+				</div> -->
+
+				<div class="mck-csat-wrapper n-vis" id="csat-1">
+					<div class="mck-ratings-smilies">
+						<div class="mck-smilies-inner">
+							<div class="mck-rating-box" data-rating="1">
+								<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+									<g fill="none" fill-rule="evenodd">
+										<path fill="#FFCC4D" d="M34.966 17.483c0 9.655-7.828 17.483-17.483 17.483C7.828 34.966 0 27.138 0 17.483 0 7.828 7.828 0 17.483 0c9.655 0 17.483 7.828 17.483 17.483"></path>
+										<path fill="#6F543A" d="M24.753 26.592c-.044-.173-1.134-4.253-7.27-4.253-6.137 0-7.227 4.08-7.27 4.253-.054.211.042.43.23.539.19.107.427.075.582-.075.018-.019 1.898-1.803 6.458-1.803 4.56 0 6.44 1.784 6.457 1.803a.49.49 0 0 0 .58.077.486.486 0 0 0 .233-.54M14.083 13.112c0 1.879-1.086 3.4-2.428 3.4-1.34 0-2.428-1.521-2.428-3.4 0-1.877 1.087-3.4 2.428-3.4 1.342 0 2.428 1.523 2.428 3.4M26.763 13.112c0 1.879-1.087 3.4-2.428 3.4s-2.428-1.521-2.428-3.4c0-1.877 1.087-3.4 2.428-3.4s2.428 1.523 2.428 3.4"></path>
+									</g>
+								</svg>
+							</div>
+							<div class="mck-rating-box" data-rating="5">
+								<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+									<g fill="none" fill-rule="evenodd">
+										<circle cx="17.497" cy="17.497" r="17.497" fill="#FFCC4D"></circle>
+										<g fill="#6F543A" transform="translate(8.089 8.713)">
+											<circle cx="4.411" cy="2.787" r="2.5"></circle>
+											<circle cx="14.411" cy="2.787" r="2.5"></circle>
+											<path d="M1.499 15.287h16.825c.783 0 .783-1 0-1H1.499c-.783 0-.783 1 0 1z"></path>
+										</g>
+									</g>
+								</svg>
+							</div>
+							<div class="mck-rating-box" data-rating="10">
+								<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+									<g fill="none" fill-rule="evenodd">
+										<path fill="#FFCC4D" d="M34.932 17.466c0 9.646-7.82 17.466-17.466 17.466S0 27.112 0 17.466 7.82 0 17.466 0s17.466 7.82 17.466 17.466"></path>
+										<path fill="#6F543A" d="M17.466 20.377c-3.516 0-5.848-.41-8.733-.97-.659-.128-1.94 0-1.94 1.94 0 3.881 4.458 8.733 10.673 8.733 6.214 0 10.674-4.852 10.674-8.733 0-1.94-1.282-2.069-1.941-1.94-2.885.56-5.218.97-8.733.97"></path>
+										<path fill="#FFF" d="M8.733 21.347s2.91.97 8.733.97c5.822 0 8.733-.97 8.733-.97s-1.94 3.881-8.733 3.881c-6.792 0-8.733-3.88-8.733-3.88"></path>
+										<path fill="#6F543A" d="M14.07 13.1c0 1.876-1.086 3.396-2.426 3.396s-2.426-1.52-2.426-3.397c0-1.875 1.086-3.396 2.426-3.396s2.426 1.52 2.426 3.396M26.737 13.1c0 1.876-1.086 3.396-2.426 3.396s-2.426-1.52-2.426-3.397c0-1.875 1.086-3.396 2.426-3.396s2.426 1.52 2.426 3.396"></path>
+									</g>
+								</svg>
+							</div>
+						</div>
+					<div id="mck-csat-close" class="n-vis">
+						<button type="button" id="km-csat-close-button" class="mck-csat-close-button">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.2501 4.75831C14.9251 4.43331 14.4001 4.43331 14.0751 4.75831L10.0001 8.82498L5.9251 4.74998C5.6001 4.42498 5.0751 4.42498 4.7501 4.74998C4.4251 5.07498 4.4251 5.59998 4.7501 5.92498L8.8251 9.99998L4.7501 14.075C4.4251 14.4 4.4251 14.925 4.7501 15.25C5.0751 15.575 5.6001 15.575 5.9251 15.25L10.0001 11.175L14.0751 15.25C14.4001 15.575 14.9251 15.575 15.2501 15.25C15.5751 14.925 15.5751 14.4 15.2501 14.075L11.1751 9.99998L15.2501 5.92498C15.5668 5.60831 15.5668 5.07498 15.2501 4.75831V4.75831Z" fill="#919EAD"></path>
+							</svg>
+						</button>
+					</div>
+				</div>
+					<span id="mck-rate-conversation">Rate your conversation</span>
+				</div>		
+				<div class="mck-csat-wrapper n-vis" id="csat-2">
+				
+					<div class="mck-feedback-text-wrapper ">
+						<textarea name="feedback" cols="34" maxlength="90" id="mck-feedback-comment" placeholder="Add a feedback (optional)" aria-label="Add a feedback (optional)" tabindex="0" rows="4"></textarea>
+						<button class="km-custom-widget-background-color mck-send-feedback" id="mck-submit-comment" aria-disabled="false" aria-label="Send feedback" tabindex="0">Submit your rating</button>
+					</div>
+				</div>
+
+				<div id="mck-rated" class="n-vis">
+					<span id="mck-rated-text">You rated the conversation</span> <span id="mck-rating-container">
+							<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+								<g fill="none" fill-rule="evenodd">
+									<circle cx="17.497" cy="17.497" r="17.497" fill="#FFCC4D"></circle>
+									<g fill="#6F543A" transform="translate(8.089 8.713)">
+										<circle cx="4.411" cy="2.787" r="2.5"></circle>
+										<circle cx="14.411" cy="2.787" r="2.5"></circle>
+										<path d="M1.499 15.287h16.825c.783 0 .783-1 0-1H1.499c-.783 0-.783 1 0 1z"></path>
+									</g>
+								</g>
+							</svg>
+					</span>
+				</div>
+
+				<div class="mck-conversation-comment n-vis" id="csat-3"></div>
+				<div id="mck-waiting-queue" class="n-vis">
+				   <span id="wq-msg-first-Part">You are currently</span> <span id="waiting-queue-number">5</span><span id="wq-msg-last-part"> in the waiting queue, our agents will get back to you shortly.</span>
+				</div>
+				<div class="mck-csat-text-1 n-vis">
+					<span id="mck-other-queries">Have other queries? </span> <a id="mck-restart-conversation" href="javascript:void(0)">Restart this conversation</a>
+				</div>
+				<div id="mck-conversation-status-box" class="n-vis mck-row"></div>
+				<div id="mck-char-warning" class="km-custom-widget-background-color n-vis">	
+					<div>	
+						<p id="mck-char-warning-text">Keep your message within 256 characters to help the bot understand easily</p>	
+				   </div>	
+				</div>
+				<div class="mck-box-form mck-row n-vis">
+					<div class="blk-lg-12">
+						<p id="mck-msg-error" class="mck-sidebox-error n-vis">Group has been deleted</p>
+					</div>
+					<div id="mck-msg-response" class="blk-lg-12 mck-box-response n-vis">
+						<div id="mck-response-text" class="response-text"></div>
+					</div>
+					<div class="blk-lg-12">
+						<form id="mck-msg-form" class="vertical mck-msg-form">
+							<div class="mck-form-group n-vis">
+								<label class="sr-only placeholder-text control-label" for="mck-msg-to">To:</label>
+								<input class="mck-form-cntrl" id="mck-msg-to" name="mck-msg-to" placeholder="To" required="">
+							</div>
+							<div id="mck-reply-to-div" class="n-vis">
+								<button type="button" id="close" class="mck-box-close mck-close-panel move-right">
+									<span aria-hidden="true">×</span>
+								</button>
+								<div id="mck-reply-to" class=" mck-msgto "></div>
+								<div id="mck-reply-msg"> </div>
+							</div>
+							<div class="mck-form-group last last-child">
+								<label class="sr-only placeholder-text control-label" for="mck-textbox">Message</label>
+								<div id="mck-textbox-container" class="mck-textbox-container">
+									<div id="mck-btn-attach-box" class="mck-blk-2 mck-text-box-panel mck-mid-panel move-right mck-attach-menu-main-container vis">
+										<div id="mck-location-sharing-box" class="mck-location-sharing-box">
+											<button id="mck-btn-loc" class="menu-item mck-btn-loc" title="Location Sharing">
+												<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 11 15" class="mck-icon-marker-blue">
+													<g fill="#787474" fill-rule="nonzero">
+														<path d="M5.5 0C2.46718421 0 0 2.46718421 0 5.5c0 2.95465789 5.06868421 8.6370263 5.28463158 8.8775789.05471053.061079.13315789.0961053.21536842.0961053s.16065789-.0350263.21536842-.0961053C5.93102632 14.1370263 11 8.45465789 11 5.5 11 2.46718421 8.53281579 0 5.5 0zm0 13.7447895C4.52505263 12.6184474.57894737 7.90957895.57894737 5.5.57894737 2.78647368 2.78647368.57894737 5.5.57894737S10.4210526 2.78647368 10.4210526 5.5c0 2.40842105-3.94610523 7.1184474-4.9210526 8.2447895z" stroke="#787474" stroke-width="0.3"></path>
+														<path d="M5.5 2.89473684c-1.43636842 0-2.60526316 1.16889474-2.60526316 2.60526316 0 1.43636842 1.16889474 2.60526316 2.60526316 2.60526316 1.43665789 0 2.60526316-1.16889474 2.60526316-2.60526316 0-1.43636842-1.16860527-2.60526316-2.60526316-2.60526316zm0 4.63157895c-1.11736842 0-2.02631579-.90894737-2.02631579-2.02631579S4.38263158 3.47368421 5.5 3.47368421c1.11707895 0 2.02631579.90894737 2.02631579 2.02631579S6.61707895 7.52631579 5.5 7.52631579z" stroke="#787474" stroke-width="0.3"></path>
+													</g>
+												</svg>
+											</button>
+											<button id="mck-file-up" class="mck-file-upload menu-item" title="Upload Attachment" aria-disabled="false" aria-label="Upload Attachment" tabindex="0">
+												<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" class="mck-icon-upload">
+													<path fill="#787474" fill-rule="nonzero" d="M2.79801641 16.79165738l.01279906.00769045c2.7142501 1.62062499 4.9765631.04219128 6.1885999-1.97497667.3270023-.54422324 1.55448623-2.58074521 2.79039798-4.63129344 1.25308361-2.079127 2.51480582-4.17263105 2.8555035-4.73964722.7850585-1.30655673.928768-3.12041452-1.02247594-4.29284017C12.4491118.45868356 11.49591165.61137697 10.9027726.8630112c-.85581269.36273948-1.35565745 1.08421422-1.53088846 1.37743617l-5.658368 9.39208556c-.70517184 1.17797162-.5235628 2.28122412.47371238 2.8804475.61996573.372513 1.2844719.37303855 1.87102157.00170976.42648918-.27015628.72709626-.67870968.90411746-.97371957l5.59414907-9.35431076c.14474987-.24209567.0661251-.55564877-.17547919-.70081928l-.00087665-.00052674c-.24244632-.14496057-.55649081-.06591517-.70134602.17635583l-5.59383301 9.35378475c-.09800968.16351264-.30334324.46394185-.57398283.63516794-.2604276.16495342-.50615497.16048317-.7970269-.01429032-.4921504-.2957138-.53361547-.79263778-.12370218-1.47723092l5.65857872-9.39243626c.12462827-.2086077.47507585-.71678977 1.0529514-.9620843.54569911-.23145859 1.1496441-.15277963 1.7951741.23318488 1.53886856.92464552 1.08150083 2.20688915.6716944 2.88892158-.34059233.56684084-1.60217382 2.65971354-2.85476605 4.7384199-1.23640317 2.05096895-2.46402775 4.08812214-2.79103011 4.63234546-.59595756.99183994-2.25554543 3.13550123-4.7874873 1.62370223l-.0112211-.00674232c-1.13350634-.68107932-1.6541578-1.56042484-1.5915647-2.68804318.03917501-.7073837.31716069-1.51157536.80397927-2.32535185l4.75213674-7.90491222c.14548655-.24213028.06728318-.5563847-.17467177-.70176591-.24213028-.14548655-.5563847-.06728319-.7017659.17467177l-4.75276886 7.9059642c-.57201106.95635488-.8995258 1.92240601-.94810117 2.79476154-.05812167 1.04630744.2573944 2.52281778 2.0866089 3.62192074z"></path>
+												</svg>
+											</button>
+										</div>
+										<div id="mck-attachfile-box" class="mck-blk-12 n-vis">
+											<button id="mck-file-up2" type="button" class="mck-file-upload mck-file-attach-label mck-btn mck-btn-text-panel" title="Attach File" aria-disabled="false" aria-label="Upload Attachment" tabindex="0">
+												<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" class="mck-icon-upload">
+													<path fill="#787474" fill-rule="nonzero" d="M2.79801641 16.79165738l.01279906.00769045c2.7142501 1.62062499 4.9765631.04219128 6.1885999-1.97497667.3270023-.54422324 1.55448623-2.58074521 2.79039798-4.63129344 1.25308361-2.079127 2.51480582-4.17263105 2.8555035-4.73964722.7850585-1.30655673.928768-3.12041452-1.02247594-4.29284017C12.4491118.45868356 11.49591165.61137697 10.9027726.8630112c-.85581269.36273948-1.35565745 1.08421422-1.53088846 1.37743617l-5.658368 9.39208556c-.70517184 1.17797162-.5235628 2.28122412.47371238 2.8804475.61996573.372513 1.2844719.37303855 1.87102157.00170976.42648918-.27015628.72709626-.67870968.90411746-.97371957l5.59414907-9.35431076c.14474987-.24209567.0661251-.55564877-.17547919-.70081928l-.00087665-.00052674c-.24244632-.14496057-.55649081-.06591517-.70134602.17635583l-5.59383301 9.35378475c-.09800968.16351264-.30334324.46394185-.57398283.63516794-.2604276.16495342-.50615497.16048317-.7970269-.01429032-.4921504-.2957138-.53361547-.79263778-.12370218-1.47723092l5.65857872-9.39243626c.12462827-.2086077.47507585-.71678977 1.0529514-.9620843.54569911-.23145859 1.1496441-.15277963 1.7951741.23318488 1.53886856.92464552 1.08150083 2.20688915.6716944 2.88892158-.34059233.56684084-1.60217382 2.65971354-2.85476605 4.7384199-1.23640317 2.05096895-2.46402775 4.08812214-2.79103011 4.63234546-.59595756.99183994-2.25554543 3.13550123-4.7874873 1.62370223l-.0112211-.00674232c-1.13350634-.68107932-1.6541578-1.56042484-1.5915647-2.68804318.03917501-.7073837.31716069-1.51157536.80397927-2.32535185l4.75213674-7.90491222c.14548655-.24213028.06728318-.5563847-.17467177-.70176591-.24213028-.14548655-.5563847-.06728319-.7017659.17467177l-4.75276886 7.9059642c-.57201106.95635488-.8995258 1.92240601-.94810117 2.79476154-.05812167 1.04630744.2573944 2.52281778 2.0866089 3.62192074z"></path>
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div id="mck-attach-img-box" class="mck-blk-12 mck-attach-img-vid-box n-vis">
+										<button id="mck-img-file-up" type="button" class="mck-img-file-up mck-file-attach-label mck-btn mck-btn-text-panel n-vis" title="Attach File" aria-disabled="false" aria-label="Upload Image" tabindex="0">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M11.8889 15.5556C13.3616 15.5556 14.5556 14.3616 14.5556 12.8889C14.5556 11.4161 13.3616 10.2222 11.8889 10.2222C10.4161 10.2222 9.22222 11.4161 9.22222 12.8889C9.22222 14.3616 10.4161 15.5556 11.8889 15.5556Z" fill="#787474"></path>
+												<path d="M19 5.77778H16.1822L15.08 4.57778C14.7511 4.21333 14.2711 4 13.7733 4H10.0044C9.50667 4 9.02667 4.21333 8.68889 4.57778L7.59556 5.77778H4.77778C3.8 5.77778 3 6.57778 3 7.55556V18.2222C3 19.2 3.8 20 4.77778 20H19C19.9778 20 20.7778 19.2 20.7778 18.2222V7.55556C20.7778 6.57778 19.9778 5.77778 19 5.77778ZM11.8889 17.3333C9.43556 17.3333 7.44444 15.3422 7.44444 12.8889C7.44444 10.4356 9.43556 8.44444 11.8889 8.44444C14.3422 8.44444 16.3333 10.4356 16.3333 12.8889C16.3333 15.3422 14.3422 17.3333 11.8889 17.3333Z" fill="#787474"></path>
+												</svg>												
+										</button>
+									</div>
+									<div id="mck-attach-vid-box" class="mck-blk-12 mck-attach-img-vid-box n-vis">
+										<button id="mck-vid-file-up" type="button" class="mck-img-vid-up mck-file-attach-label mck-btn mck-btn-text-panel n-vis" title="Attach File" aria-disabled="false" aria-label="Upload Video" tabindex="0">
+											<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="#787474">
+												<path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l2.29 2.29c.63.63 1.71.18 1.71-.71V8.91c0-.89-1.08-1.34-1.71-.71L17 10.5z"></path>
+											</svg>												
+										</button>
+									</div>
+									<div id="mck-mic-animation-container" class="mck-mic-animation-container n-vis" aria-disabled="false" title="Voice Input" aria-label="Voice Input" tabindex="0">
+										<div id="mck-animation-outer" class="mck-animation-outer km-custom-widget-background-color n-vis"></div>
+											<svg focusable="false" aria-hidden="true" id="mck-mic-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#787474" d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+									</div>
+									<div id="mck-quick-replies-box" class="mck-intent-box n-vis">
+										<div class="mck-dropdown-toggle mck-bot-icon" id="intent-option" data-toggle="mckdropdown" aria-expanded="false">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19.463 11.2112H18.7112V8.83055C18.6933 8.54415 18.4606 8.31146 18.1742 8.29356H13.037V5H11.963V8.29356H6.82578C6.53938 8.31146 6.30668 8.54415 6.28878 8.83055V11.2112H5.53699C5.2327 11.2112 5 11.4439 5 11.7482V15.2924C5 15.5967 5.2327 15.8294 5.53699 15.8294H6.28878V19.1408C6.30668 19.4272 6.53938 19.6599 6.82578 19.6778H18.1742C18.4606 19.6599 18.6933 19.4272 18.7112 19.1408V15.8294H19.463C19.7673 15.8294 20 15.5967 20 15.2924V11.7482C20 11.4439 19.7673 11.2112 19.463 11.2112ZM8.50835 12.4821C8.50835 11.6229 9.20644 10.9248 10.0656 10.9248C10.9248 10.9248 11.6229 11.6229 11.6229 12.4821C11.6229 13.3413 10.9248 14.0394 10.0656 14.0394C9.20644 14.0394 8.50835 13.3413 8.50835 12.4821ZM14.8628 17.1539H10.1372V16.08H14.8628V17.1539V17.1539ZM16.4916 12.4821C16.4916 13.3413 15.7936 14.0394 14.9344 14.0394C14.0573 14.0394 13.3592 13.3413 13.3413 12.4821C13.3413 11.605 14.0394 10.9069 14.8986 10.889C15.7578 10.8711 16.4737 11.5871 16.4916 12.4463C16.4916 12.4642 16.4916 12.4642 16.4916 12.4821Z" fill="#BCC7DB"></path>
+											</svg>
+										</div>
+										<ul class="mck-dropdown-menu mck-intent-menu stop-selection" id="mck-intent-options" aria-labelledby="intent-option">
+										</ul>
+									</div>
+									<div id="mck-btn-smiley-box" class="mck-blk-2 mck-text-box-panel move-right n-vis">
+										<div class="mck-blk-12">
+											<button type="button" id="mck-btn-smiley" class="mck-btn mck-btn-smiley mck-btn-text-panel" title="Emoji Picker" aria-disabled="false" aria-label="Emoji picker" tabindex="0">
+												<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="mck-icon-smiley-blue">
+													<g fill="#787474" fill-rule="nonzero">
+													  <path d="M9 0C4.05 0 0 4.05 0 9s4.05 9 9 9 9-4.05 9-9-4.05-9-9-9zm0 16.9411765c-4.36764706 0-7.94117647-3.5735294-7.94117647-7.9411765 0-4.36764706 3.57352941-7.94117647 7.94117647-7.94117647 4.3676471 0 7.9411765 3.57352941 7.9411765 7.94117647 0 4.3676471-3.5735294 7.9411765-7.9411765 7.9411765z"></path>
+													  <path d="M11.8058824 11.8058824c-1.5352942 1.5352941-4.07647064 1.5352941-5.61176475 0-.21176471-.2117648-.52941177-.2117648-.74117647 0-.21176471.2117647-.21176471.5294117 0 .7411764.97941176.9794118 2.25 1.482353 3.54705882 1.482353 1.2970588 0 2.5676471-.5029412 3.5470588-1.482353.2117647-.2117647.2117647-.5294117 0-.7411764-.2117647-.2117648-.5294117-.2117648-.7411764 0z"></path>
+													  <circle cx="6.35294118" cy="6.88235294" r="1.32352941"></circle>
+													  <circle cx="11.6470588" cy="6.88235294" r="1.32352941"></circle>
+													</g>
+												  </svg>
+											</button>
+										</div>
+									</div>
+									<div class="mck-blk-2 mck-text-box-panel move-right n-vis" id="send-button-wrapper"> 
+										<div class="mck-blk-12">
+											<button type="submit" id="mck-msg-sbmt" class="mck-btn mck-btn-text-panel" title="Send Message" aria-disabled="false" aria-label="Send Message" tabindex="0">
+												<span class="mck-icon-send">
+													<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+														<path class="km-custom-widget-fill" fill="#5553B7" fill-rule="evenodd" d="M7.878 7.858l-6.032.584-1.588 5.076a.787.787 0 0 0 1.097.944l13.22-6.401a.752.752 0 0 0 0-1.353L1.364.302a.787.787 0 0 0-1.096.944l1.587 5.077 6.021.584a.475.475 0 0 1 0 .946l.002.005z"></path>
+													</svg>
+												</span>
+											</button>
+										</div>
+									</div>
+
+									<textarea id="mck-autosuggest-search-input" data-provide="typeahead" placeholder="" class="mck-blk-8 n-vis mck-text mck-typeahead km-auto-expand" autocomplete="off" rows="1" data-autoresize="" form="mck-msg-form" method="post" type="text" aria-label="Select option" tabindex="0"></textarea>
+									<input id="mck-autosuggest-metadata" type="hidden" name="city-detail">
+									
+									<div id="mck-text-box" class="mck-blk-8 mck-text-box mck-text required notranslate" data-text="Type your message..." aria-label="Type your message..." tabindex="0" contenteditable="true"></div>
+									
+									<input id="mck-file-input" class="mck-file-input n-vis" type="file" name="files[]">
+									<input id="mck-image-input" class="mck-image-input n-vis" type="file" name="files[]" accept="image/*" capture="user">
+									<input id="mck-video-input" class="n-vis" type="file" name="files[]" accept="video/*" capture="">
+									<div id="mck-file-box" class="n-vis"></div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="mck-running-on n-vis notranslate">
+					Chat <svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="10" height="15" style="vertical-align: middle;"><path fill="#513DD8" fill-rule="nonzero" d="M7.69879975.54941587L5.81596948 6.3447902l3.87961917.47635733c.13377998.01642612.19891133.17720919.10092463.28401145l-7.24573967 7.4456573c-.05838132.06073652-.1713319.01291556-.14228864-.0853757l1.54838036-5.83643965-3.71239422-.45582469C.11069114 8.15675014.0455598 7.99596707.1435465 7.8891648L7.55445767.48076424c.06043478-.07746063.17133188-.01291553.14434208.06865163z"></path></svg> by
+				<a class="mck-powered-by" href="https://www.kommunicate.io/" target="_blank">
+					<span class="n-vis">Applozic Chat SDK</span> Kommunicate.io
+				</a>
+			</div>
+		</div>
+		<div id="mck-sidebox-search" class="mck-sidebox-search mck-sidebox-content mck-box-content n-vis">
+			<div class="mck-box-top" style="background-color: rgb(255, 171, 0);">
+				<div class="mck-tab-link blk-lg-4">
+					<a href="#" target="_self" role="link" class="mck-conversation-tab-link">
+						<span class="mck-icon-backward"></span>
+					</a>
+				</div>
+				<div class="blk-lg-5">
+					<div class="mck-box-title mck-truncate" title="Start New Conversation">Start New Conversation</div>
+				</div>
+				<div class="blk-lg-3 move-right mck-start-new-menu-item mck-tab-menu-box" style="display:none">
+					<div class="mck-dropdown-toggle" data-toggle="mckdropdown" aria-expanded="true">
+						<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+						</svg>
+					</div>
+					<ul id="mck-start-new-menu-list" class="mck-dropdown-menu  menu-right" role="menu">
+						<li>
+							<a href="#" id="mck-new-group" class="mck-new-group-button menu-item" title="Create Group">Create Group</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="mck-search-tab-box" class="mck-search-tab-box mck-row">
+				<div class="blk-lg-12" style="display:none">
+					<ul class="mck-nav mck-nav-panel">
+						<li class="mck-nav-item mck-nav-divider">
+							<a id="mck-contact-search-tab" class="mck-nav-link mck-contact-search active" href="#">
+								<strong title="Contacts">Contacts</strong>
+							</a>
+						</li>
+						<li class="mck-nav-item">
+							<a id="mck-group-search-tab" class="mck-nav-link mck-group-search" href="#">
+								<strong title="Groups">Groups</strong>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mck-box-top mck-search-box-top" style="background-color: rgb(255, 171, 0);">
+				<div id="mck-contact-search-input-box" class="mck-input-group blk-lg-12">
+					<input id="mck-contact-search-input" type="text" data-provide="typeahead" placeholder="Search...">
+					<span class="mck-search-icon">
+						<a href="#" role="link" class="mck-contact-search-link">
+							<span class="mck-icon-search"></span>
+						</a>
+					</span>
+				</div>
+				<div id="mck-group-search-input-box" class="mck-input-group blk-lg-12 n-vis">
+					<input id="mck-group-search-input" type="text" data-provide="typeahead" placeholder="Search...">
+					<span class="mck-search-icon">
+						<a href="#" role="link" class="mck-group-search-link">
+							<span class="mck-icon-search"></span>
+						</a>
+					</span>
+				</div>
+			</div>
+			<div class="mck-box-body">
+
+				<div id="mck-search-cell" class="mck-tab-cell">
+					<div class="mck-message-inner">
+						<ul id="mck-contact-search-list" class="mck-contact-search-list mck-contact-list mck-nav mck-nav-tabs mck-nav-stacked"></ul>
+						<ul id="mck-group-search-list" class="mck-contact-list mck-group-search-list mck-nav mck-nav-tabs mck-nav-stacked n-vis"></ul>
+						<div id="mck-no-search-groups" class="mck-no-data-text mck-text-muted n-vis">No groups yet!</div>
+						<div id="mck-no-search-contacts" class="mck-no-data-text mck-text-mutedn n-vis">No contacts yet!</div>
+						<div id="mck-search-loading" class="mck-loading n-vis">
+							<svg focusable="false" aria-hidden="true" class="mck-circular-spinner" viewBox="25 25 50 50" width="50" height="50">
+								<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mck-group-create-tab" class="mck-group-create-tab mck-sidebox-content mck-box-content n-vis">
+			<div class="mck-box-top" style="background-color: rgb(255, 171, 0);">
+				<div class="mck-tab-link blk-lg-4">
+					<a id="mck-search-tab-link" href="#" target="_self" role="link" class="mck-contact-search">
+						<span class="mck-icon-backward"></span>
+					</a>
+				</div>
+				<div class="blk-lg-8">
+					<div class="mck-box-title mck-truncate" title="Create Group">Create Group</div>
+				</div>
+			</div>
+			<div class="mck-box-body">
+				<div class="mck-tab-cell">
+					<div id="mck-group-create-panel" class="mck-tab-panel mck-message-inner mck-group-create-inner">
+						<div class="mck-group-sub-sec">
+							<div id="mck-group-create-icon-box" class="mck-group-create-icon-box mck-group-icon-box mck-hover-on">
+								<div class="mck-group-icon"></div>
+								<span class="mck-overlay-box">
+									<div class="mck-overlay">
+										<span class="mck-camera-icon"></span>
+										<span id="mck-gc-overlay-label" class="mck-overlay-label">Add Group Icon</span>
+									</div>
+									<div id="mck-group-create-icon-loading" class="mck-loading n-vis">
+										<svg focusable="false" aria-hidden="true" class="mck-circular-spinner" viewBox="25 25 50 50" width="50" height="50">
+											<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+										</svg>
+									</div>
+									<input id="mck-group-icon-upload" class="mck-group-icon-upload n-vis" type="file" name="files[]">
+								</span>
+							</div>
+						</div>
+						<div id="mck-group-create-name-sec" class="mck-group-sub-sec">
+							<div id="mck-group-create-name-box" class="mck-row mck-group-name-box">
+								<div class="blk-lg-12">
+									<div id="mck-gc-title-label" class="mck-label">Group Title</div>
+								</div>
+								<div class="blk-lg-12">
+									<div id="mck-group-create-title" class="mck-group-create-title mck-group-title" contenteditable="true">Group title</div>
+								</div>
+							</div>
+						</div>
+						<div id="mck-group-create-type-sec" class="mck-group-sub-sec">
+							<div id="mck-group-create-type-box" class="mck-row mck-group-type-box">
+								<div class="blk-lg-12">
+									<div id="mck-gc-type-label" class="mck-label">Group Type</div>
+								</div>
+								<div class="blk-lg-12">
+									<select id="mck-group-create-type" class="mck-select">
+										<option value="2" selected="selected">Public</option>
+										<option value="1">Private</option>
+										<option value="6">Open</option>
+									<option value="1">Public</option><option value="2">Private</option><option value="6">Open</option></select>
+								</div>
+							</div>
+						</div>
+						<div id="mck-group-create-btn-sec" class="mck-group-sub-sec">
+							<button type="button" id="mck-btn-group-create" class="mck-btn mck-btn-green mck-btn-group-create" title="Create Group">Create Group</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mck-group-info-tab" class="mck-group-info-tab mck-sidebox-content mck-box-content">
+			<div class="mck-box-top" style="background-color: rgb(255, 171, 0);">
+				<div class="mck-tab-link blk-lg-4">
+					<a id="mck-group-back-link" href="#" role="link" target="_self" class="mck-group-back-link">
+						<span class="mck-icon-backward"></span>
+					</a>
+				</div>
+				<div class="blk-lg-8">
+					<div class="mck-box-title mck-truncate" title="Group Info">Group Info</div>
+				</div>
+			</div>
+			<div id="mck-group-info-panel" class="mck-tab-panel mck-group-info-panel">
+				<div class="mck-group-icon-sec">
+					<div id="mck-group-info-icon-box" class="mck-group-icon-box mck-group-info-icon-box mck-hover-on">
+						<div class="mck-group-icon"></div>
+						<span class="mck-overlay-box n-vis">
+							<div class="mck-overlay">
+								<span class="mck-camera-icon"></span>
+								<span id="mck-gi-overlay-label" class="mck-overlay-label">Change Group Icon</span>
+							</div>
+							<div id="mck-group-info-icon-loading" class="mck-loading vis">
+								<svg focusable="false" aria-hidden="true" class="mck-circular-spinner" viewBox="25 25 50 50" width="50" height="50">
+									<circle class="mck-spinner-path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+								</svg>
+							</div>
+							<input id="mck-group-icon-change" class="mck-group-icon-change n-vis" type="file" name="file[]">
+						</span>
+					</div>
+					<div class="mck-text-center">
+						<a id="mck-btn-group-icon-save" href="#" role="link" class="mck-btn-group-icon-save n-vis" title="Save">
+							<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path fill="none" d="M0 0h24v24H0z"></path>
+								<path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div id="mck-group-name-sec" class="mck-group-name-sec">
+					<div id="mck-group-name-box" class="mck-row mck-group-name-box">
+						<div class="blk-lg-9">
+							<div id="mck-group-title" class="mck-group-title" contenteditable="false">Group title</div>
+						</div>
+						<div class="blk-lg-3 mck-group-name-edit-icon">
+							<a id="mck-group-name-edit" href="#" role="link" class="mck-group-name-edit vis" title="Edit">
+								<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+									<path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+									<path d="M0 0h24v24H0z" fill="none"></path>
+								</svg>
+							</a>
+							<a id="mck-group-name-save" href="#" role="link" class="mck-group-name-save n-vis" title="Save">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+									<path fill="none" d="M0 0h24v24H0z"></path>
+									<path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="mck-group-member-panel" class="mck-tab-panel mck-group-member-panel vis">
+				<div class="mck-group-md-sec">
+					<div id="mck-group-member-title" class="mck-row mck-group-member-text" title="Members">Members</div>
+					<div id="mck-group-add-member-box" class="mck-row mck-group-admin-options mck-group-add-member-box n-vis">
+						<a id="mck-group-add-member" class="mck-group-add-member" href="#">
+							<div class="blk-lg-3">
+								<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+									<path d="M0 0h24v24H0z" fill="none"></path>
+									<path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+								</svg>
+							</div>
+							<div class="blk-lg-9" title="Add Member">Add Member</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="mck-box-body">
+				<div class="mck-tab-cell">
+					<div class="mck-group-member-inner">
+						<ul id="mck-group-member-list" class="mck-group-member-list mck-contact-list mck-nav mck-nav-tabs mck-nav-stacked">
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="mck-group-update-panel" class="mck-tab-panel mck-group-update-panel n-vis">
+				<div class="mck-group-bottom-sec">
+					<div class="mck-row mck-group-update-sec">
+						<button type="button" id="mck-btn-group-update" class="mck-btn mck-btn-green mck-btn-group-update" title="Update">Update</button>
+					</div>
+				</div>
+			</div>
+			<div id="mck-group-info-ft" class="mck-group-info-ft">
+				<button type="button" id="mck-btn-group-exit" class="mck-btn mck-btn-blue mck-btn-group-exit" title="Exit Group">Exit Group</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="mck-loc-box" class="mck-box mck-loc-box fade" aria-hidden="false" style="visibility: visible;">
+	<div class="mck-box-dialog mck-box-md">
+		<div class="mck-box-content">
+			<div class="mck-box-top mck-row" style="background-color: rgb(255, 171, 0);">
+				<div class="blk-lg-10">
+					<h4 class="mck-box-title" title="Location Sharing">Location Sharing</h4>
+				</div>
+				<div class="blk-lg-2">
+					<button type="button" class="mck-box-close" data-dismiss="mckbox" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+			</div>
+			<div class="mck-box-body">
+				<div class="mck-form-group">
+					<div class="blk-lg-12">
+						<input id="mck-loc-address" type="text" class="mck-form-control" placeholder="Enter a location" autocomplete="off">
+					</div>
+				</div>
+				<div id="mck-map-content" class="mck-loc-content"></div>
+				<div class="n-vis">
+					<label class="blk-sm-2 mck-control-label">Lat.:</label>
+					<div class="blk-sm-3">
+						<input type="text" id="mck-loc-lat" class="mck-form-control">
+					</div>
+					<label class="blk-sm-2 mck-control-label">Long.:</label>
+					<div class="blk-sm-3">
+						<input type="text" id="mck-loc-lon" class="mck-form-control">
+					</div>
+				</div>
+			</div>
+			<div class="mck-box-footer">
+				<button id="mck-my-loc" type="button" class="mck-my-loc mck-btn mck-btn-green" title="My Location">My Location</button>
+				<button id="mck-loc-submit" type="button" class="mck-btn mck-btn-blue mck-loc-submit move-right" aria-disabled="false" aria-label="Send Location" tabindex="0" title="Send">Send</button>
+				<button id="mck-btn-close-loc-box" type="button" class="mck-btn mck-btn-default move-right" data-dismiss="mckbox" aria-disabled="false" aria-label="Close" tabindex="0" role="button" title="Close">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="mck-gm-search-box" class="mck-box mck-gm-search-box fade" aria-hidden="true" style="visibility: visible;">
+	<div class="mck-box-dialog mck-box-sm">
+		<div class="mck-box-content">
+			<div class="mck-box-top mck-row" style="background-color: rgb(255, 171, 0);">
+				<div class="blk-lg-3">
+					<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+					</svg>
+				</div>
+				<div class="blk-lg-7">
+					<h4 class="mck-box-title" title="Add Member">Add Member</h4>
+				</div>
+				<div class="blk-lg-2">
+					<button type="button" class="mck-box-close" data-dismiss="mckbox" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+			</div>
+			<div class="mck-box-body">
+				<div class="mck-form-group">
+					<div class="mck-input-group blk-lg-12">
+						<input id="mck-group-member-search" type="text" data-provide="typeahead" placeholder="Search...">
+						<span class="mck-search-icon">
+							<a href="#" role="link" class="mck-group-member-search-link">
+								<span class="mck-icon-search"></span>
+							</a>
+						</span>
+					</div>
+				</div>
+				<div class="mck-tab-cell">
+					<div class="mck-message-inner">
+						<ul id="mck-group-member-search-list" class=" mck-contact-list mck-group-member-search-list mck-nav mck-nav-tabs mck-nav-stacked"></ul>
+						<div id="mck-no-gsm-text" class="mck-no-data-text mck-text-muted n-vis">No contacts yet!
+						</div>
+					</div>
+					<div id="mck-gms-loading" class="mck-loading n-vis">
+						<svg focusable="false" aria-hidden="true" class="mck-circular-spinner" viewBox="25 25 50 50" width="50" height="50">
+							<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="km-chat-login-modal" class="km-sidemodal km-modal" role="main" aria-live="polite" style="visibility: hidden;">
+	<div class="km-modal-dialog km-modal-sm">
+		<div class="km-modal-content">
+				<div class="km-sidemodal--modal-header km-custom-widget-background-color">
+						<div class="blk-lg-7 mck-name-status-container mck-box-title km-modal-title mck-truncate">
+							<div id="km-tab-title" class="mck-tab-title mck-truncate mck-display-name"></div>
+					</div>
+				<div class="blk-lg-2 mck-close-btn">
+					<button type="button" id="km-modal-close" class="mck-box-close km-close-sidebox move-right" data-dismiss="mckbox" tabindex="0" aria-label="Close" aria-hidden="false" role="button">
+						<svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24">
+							<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+							<path d="M0 0h24v24H0z" fill="none"></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="km-modal-body">
+				<div class="km-section-title">
+					<p id="km-lead-collection-heading" class="km-modal-span" tabindex="0"></p>
+				</div>
+				<p id="km-error-chat-login" class="km-modal-error n-vis"></p>
+				<div class="km-modal-form">
+					<form id="km-form-chat-login" class="km-vertical">
+						<div class="km-form-group km-form-group-container">
+							<input class="km-form-control km-input-width n-vis" id="km-userId" name="km-userId">
+						</div>
+						<div class="km-form-group km-last mck-askuserdetail-inputdiv km-last-child km-text-center"></div>
+						<div class="km-form-group km-text-center">
+							<button type="submit" id="km-submit-chat-login" class="mck-btn btn-primary km-start-conversation km-custom-widget-background-color" tabindex="0" role="button"></button>
+						</div>
+					</form> 
+				</div>
+				<!--<div class="section-title section-separator">
+					<h3>Or</h3>
+				</div>
+				  <div class="form-group last last-child text-center">
+					<button type="button" id="guestLogin" class="btn btn-default">
+						Chat as guest</button>
+				</div>-->
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>function detectBrowserAndMakeUiVisible(){function showAfterLoad(){document.getElementById("mck-sidebox").style.visibility="visible",document.getElementById("mck-loc-box").style.visibility="visible",document.getElementById("mck-gm-search-box").style.visibility="visible"}-1!==navigator.userAgent.indexOf("MSIE")||navigator.appVersion.indexOf("Trident/")>0?showAfterLoad():!!parent.document.getElementById("kommunicate-widget-iframe")?window.parent.document.addEventListener("kmInitilized",(function(){showAfterLoad()}),!1):window.addEventListener("kmInitilized",(function(){showAfterLoad()}),!1)}detectBrowserAndMakeUiVisible();</script><div id="mck-sidebox-launcher" class="mck-sidebox-launcher launchershadow km-launcher-animation" style="right: 10px; bottom: 10px;"><a href="#" target="_self" aria-label="Open Chat" role="button" tabindex="0" aria-live="polite" class="applozic-launcher"><div id="km-popup-close-button" aria-label="Close" role="button" class="km-custom-widget-background-color "><svg width="64" xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 0 64 64"><path fill="#fff" d="M28.941 31.786L.613 60.114a2.014 2.014 0 1 0 2.848 2.849l28.541-28.541 28.541 28.541c.394.394.909.59 1.424.59a2.014 2.014 0 0 0 1.424-3.439L35.064 31.786 63.41 3.438A2.014 2.014 0 1 0 60.562.589L32.003 29.15 3.441.59A2.015 2.015 0 0 0 .593 3.439l28.348 28.347z" stroke-width="6" stroke="#fff"></path></svg></div><div id="launcher-svg-container" class="km-chat-icon-sidebox km-custom-widget-background-color km-chat-widget-background-color null km-animate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 20"><path fill="#FFF" d="M21.25 18.48V7.31a7.3 7.3 0 0 0-7.3-7.3H7.31a7.3 7.3 0 1 0 0 14.6h7.2s.58.04.93.17c.34.12.71.42.71.42l4.44 3.66s.4.34.55.27c.15-.07.11-.65.11-.65zM7.51 8.8c0 .49-.42.88-.95.88-.52 0-.95-.4-.95-.88V5.67c0-.49.43-.88.95-.88.53 0 .95.4.95.88V8.8zm4.07 1.48c0 .49-.43.88-.95.88s-.95-.39-.95-.88v-6.1c0-.48.43-.88.95-.88s.95.4.95.88v6.1zm4.06-1.48c0 .49-.42.88-.95.88-.52 0-.94-.4-.94-.88V5.67c0-.49.42-.88.94-.88.53 0 .95.4.95.88V8.8z"></path></svg></div><div id="launcher-agent-img-container" class="n-vis"></div></a><div id="applozic-badge-count" class="applozic-badge-count km-iframe-badge-count"></div><div id="mck-msg-preview-visual-indicator" class="mck-msg-preview-visual-indicator-container n-vis"><div class="mck-close-btn-container"><div class="mck-close-btn"><span class="mck-close-icon-svg"><svg viewBox="0 0 64 64" width="8" xmlns="http://www.w3.org/2000/svg" height="8"><path fill="#fff" d="M28.941 31.786L.613 60.114a2.014 2.014 0 1 0 2.848 2.849l28.541-28.541 28.541 28.541c.394.394.909.59 1.424.59a2.014 2.014 0 0 0 1.424-3.439L35.064 31.786 63.41 3.438A2.014 2.014 0 1 0 60.562.589L32.003 29.15 3.441.59A2.015 2.015 0 0 0 .593 3.439l28.348 28.347z"></path></svg></span><span class="mck-close-text">Close</span></div></div><div class="mck-msg-preview-visual-indicator-text  applozic-launcher"></div></div></div><div id="chat-popup-widget-container" class="chat-popup-widget-container chat-popup-widget-container--vertical km-animate"><div class="chat-popup-widget-text-wrapper applozic-launcher"><p class="chat-popup-widget-text">Bonjour. Je suis Maria, votre Chatbot . Comment puis-je vous aider ?</p></div><div class="chat-popup-widget-close-btn-container"><div class="chat-popup-widget-close-btn"><span class="chat-popup-widget-close-icon-svg"><svg viewBox="0 0 64 64" width="8" xmlns="http://www.w3.org/2000/svg" height="8"><path fill="#fff" d="M28.941 31.786L.613 60.114a2.014 2.014 0 1 0 2.848 2.849l28.541-28.541 28.541 28.541c.394.394.909.59 1.424.59a2.014 2.014 0 0 0 1.424-3.439L35.064 31.786 63.41 3.438A2.014 2.014 0 1 0 60.562.589L32.003 29.15 3.441.59A2.015 2.015 0 0 0 .593 3.439l28.348 28.347z"></path></svg></span></div></div></div><div id="mck-msg-preview" class="mck-msg-preview applozic-launcher"><div class="mck-row"><div class="blk-lg-3 mck-preview-icon"></div><div class="blk-lg-9"><div class="mck-row mck-truncate mck-preview-content"><strong class="mck-preview-cont-name"></strong></div><div class="mck-row mck-preview-content"><div class="mck-preview-msg-content"></div><div class="mck-preview-file-content mck-msg-text notranslate blk-lg-12 mck-attachment n-vis"></div></div></div></div><div id="mck-msg-preview-btns" class="n-vis"><button id="mck-vid-call-accept">Accept</button><button id="mck-vid-call-reject">reject</button></div></div></body></html>

@@ -1,0 +1,196 @@
+<%- include('part/header'); %>
+    <section class="section section-xl bg-secondary overlay-dark text-white rounded">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-md-center">
+                    <h1 class="display-3">
+                        Récapitulatif des Informations de la Déclaration <br>
+                        <%= data.genre%>  <%= data.nom + ' ' + data.prenom %><br>
+                        <%= date %>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-soft border-0 mb-4">
+                <div class="card-body ml-5 mr-5 mt-2">
+                    <div class="row">
+                        <form method="POST" id="regForm" action="apercu">
+                            <h3 style="text-align: center">
+                                Informations Personnelles
+                            </h3>
+                            <div class="col-md-12">
+                                <select name="user_type" class="form-control">
+                                    <option value="" disabled selected>
+                                        Choisissez une Option
+                                    </option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <br />
+                            <div class="col-md-12">
+                                <input value="<%= data.cni %>" class="form-control" type="number" name="cni" placeholder="N°CNI" required />
+                            </div>
+                            <br>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col">
+                                        <input value="<%= data.nom %>" class="form-control" type="text" name="nom" placeholder="Nom" required />
+                                    </div>
+                                    <div class="col">
+                                        <input value="<%= data.prenom %>" class="form-control" type="text" name="prenom" placeholder="Prenom"
+                                            required />
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col">
+                                        <input value="<%= data.adresse %>" class="form-control" type="text" name="adresse" placeholder="Adresse"
+                                            required />
+                                    </div>
+                                    <div class="col">
+                                        <input value="<%= data.telephone %>" class="form-control" type="text" name="telephone" placeholder="Téléphone"
+                                            required />
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="col-md-12">
+                                <div class="row" style="
+                            border: 0.1rem solid #95919130;
+                            width: 100%;
+                            padding: 6px;
+                            margin-left: 0;
+                          ">
+                                    <div class="col-md-6">
+                                        <input value="<%= data.genre %>" class="checkbox" type="radio" id="new" name="genre" value="Monsieur"
+                                            required="" checked="checked" />
+                                        <label for="new">
+                                            <span>
+                                                <img src="fichiers/check-icn.svg" alt="Checked Icon" />
+                                            </span>
+                                            Monsieur
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input value="<%= data.genre %>" class="checkbox" type="radio" id="renew" name="genre"
+                                            value="Madame" required="" />
+                                        <label for="renew">
+                                            <span>
+                                                <img src="fichiers/check-icn.svg" alt="Checked Icon" />
+                                            </span>
+                                            Madame
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h3 style="text-align: center">
+                                Informations sur le bien Volé
+                            </h3>
+
+                            <div class="col-md-12">
+                                <select name="type" class="form-control">
+                                    <option value="" disabled selected>
+                                        Choisissez une Option
+                                    </option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <br />
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col">
+                                        <input value="<%= data.couleur %>" class="form-control" type="text" name="couleur" placeholder="Couleur"
+                                            required />
+                                    </div>
+                                    <div class="col">
+                                        <input value="<%= data.marque %>" class="form-control" type="text" name="marque" placeholder="Marque"
+                                            required />
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="col-md-12">
+                                <input value="<%= data.serie %>" class="form-control" type="text" name="serie" placeholder="Numéro de série"
+                                    required />
+                            </div>
+                            <br />
+                            <div class="col-md-12">
+                                <input value="<%= data.matricule %>" class="form-control" type="text" name="matricule" placeholder="Matricule"
+                                    required />
+                            </div>
+                            <br />
+                            <div class="col-md-12">
+                                <textarea name="description" class="form-control" cols="98" rows="10" required> <%= data.description %>  </textarea>
+                            </div>
+
+                            <h3 style="text-align: center">Informations Annexes</h3>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="firstname">Heure Exacte</label>
+                                    <input value="<%= data.heure %>" required type="time" class="form-control" id="time" name="heure" />
+                                </div>
+                            </div>
+                            <br />
+                            <h5 style="text-align: center">
+                                Si vous ne vous rappeler pas de l'heure exacte signifier
+                                l'interval
+                            </h5>
+
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="firstname">Début</label>
+                                            <input value="<%= data.debut %>" required type="time" class="form-control" id="time" name="debut" />
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="firstname">Fin</label>
+                                            <input value="<%= data.fin %>" required type="time" class="form-control" id="time" name="fin" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br />
+                            <h3 style="text-align: center">Lieu</h3>
+                            <br />
+                            <div class="col-md-12">
+                                <input value="<%= data.rue %>" class="form-control" type="text" name="rue" placeholder="N° de la rue"
+                                    required />
+                            </div>
+                            <br />
+                            <div class="col-md-12">
+                                <input value="<%= data.ville %>" class="form-control" type="text" name="ville" placeholder="Ville, Commune"
+                                    required />
+                            </div>
+                            <br />
+                            <div class="col-md-12">
+                                <input value="<%= data.code %>" class="form-control" type="text" name="code" placeholder="Code Postal"
+                                    required />
+                            </div>
+                            <br />
+                        </form>
+                    </div>
+                    <button type="button" class="
+                btn btn-lg btn-primary btn-block
+                mt-3 mt-md-0
+                animate-up-2
+              " id="nextBtn">
+                        Envoyer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('part/footer'); %>

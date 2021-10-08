@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+}
+
+.grayd{
+  background-color: rgb(222, 233, 233);
+  text-align: center;
+}
+
+.ap-title{
+  margin: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2em !important;
+  text-align: center !important;
+}
+
+.ap-titles{
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+  font-size: 1em !important;
+  text-align: center !important;
+}
+
+.m1 {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5em !important;
+}
+
+.utile{
+  font-family: "Oswald", sans-serif;
+  font-size: 2em !important;
+}
+
+.first-section {
+  height: 33rem !important;
+}
+
+.section-info {
+  text-align: center;
+}
+
+.section-info-1 {
+  margin: 0.2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.section-info-00 {
+  margin: 0.2rem;
+  padding: 5rem;
+  border-radius: 6px;
+}
+
+.logo-space{
+  margin: 0;
+}
+
+.logo-space img{
+  margin: 0;
+  height: 30rem;
+}
+
+.info{
+  text-align: start;
+}
+
+.utile-res{
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.card-infor{
+  text-align: start;
+}
+
+.card-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.card-info-2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 6px;
+}
+
+.img-card img{
+  height: 15rem;
+  width: 15rem;
+  margin: 0.5rem;
+}
+
+.img-card-2 img{
+  height: 10rem;
+  width: 10rem;
+  margin: 0.5rem;
+  border-radius: 100%;
+}
+
+.centre{
+  display: flex !important;
+  justify-content: space-evenly !important;
+  text-align: center !important;
+}
+
+/* wizzar */
+
+#regForm {
+  background-color: #ffffff;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.tab {
+  display: none;
+}
+
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+.step {
+  margin: 2rem;
+  padding: 0.8rem;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #04AA6D;
+}
